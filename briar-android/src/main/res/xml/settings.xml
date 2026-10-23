@@ -75,6 +75,11 @@
 	</PreferenceCategory>
 
 	<Preference
+		android:title="Check for updates"
+		app:allowDividerAbove="true"
+		app:fragment="org.briarproject.briar.android.family.FamilyUpdateFragment" />
+
+	<Preference
 		android:title="@string/about_title"
 		app:allowDividerAbove="true"
 		app:fragment="org.briarproject.briar.android.settings.AboutFragment"

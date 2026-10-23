@@ -60,6 +60,10 @@ public class BriarApplicationImpl extends Application
 	public void onCreate() {
 		super.onCreate();
 
+		dev.gagan.family.update.FamilyUpdater.init(this, dev.gagan.family.update.FamilyConfig.MANIFEST_URL,
+				dev.gagan.family.update.FamilyConfig.SIGNER_SHA256);
+		dev.gagan.family.update.FamilyUpdater.checkOnAppStart();
+
 		if (IS_DEBUG_BUILD) enableStrictMode();
 
 		applicationComponent = createApplicationComponent();
